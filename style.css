@@ -6,12 +6,24 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -24,12 +36,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   position: relative;
   padding: 10px 0;
 }
 .container .left-image {
   width: 50%;
+  overflow: hidden;
 }
 
 .container .left-image [src="./images/illustration-woman-online-desktop.svg"] {
@@ -39,20 +51,18 @@ body {
   position: relative;
   left: -70px;
 }
-/* .container .left-image [src="./images/bg-pattern-desktop.svg"] {
-  width: 90%;
-  height: 120%;
+.container .left-image [src="./images/bg-pattern-desktop.svg"] {
   position: absolute;
-  left: -200px;
-  /* top: 50px; 
-} */
+  width: 500px;
+  top: 0;
+  left: -100px;
+}
 
 [src="./images/illustration-box-desktop.svg"] {
   position: absolute;
-  width: 150px;
+  top: 48%;
   left: -100px;
-  top: 65%;
-  transform: translateY(-65%);
+  width: 150px;
 }
 
 .container .right-text {
@@ -64,7 +74,7 @@ body {
 }
 
 .card {
-  border-bottom: 1px solid #cac9c9;
+  border-bottom: 1px solid var(--Light-grayish-blue);
   width: 80%;
 }
 
@@ -77,7 +87,7 @@ body {
 }
 
 .card ion-icon {
-  color: rgb(255, 115, 0);
+  color: var(--Soft-red);
 }
 
 .card #text.off {
@@ -88,11 +98,15 @@ body {
   font-size: 15px;
   margin-bottom: 10px;
   display: block;
+  text-align: justify;
+  color: var(--Very-dark-grayish-blue);
 }
 
-
-
-[name="chevron-down-outline"], [name="chevron-up-outline"] {
+[name="chevron-down-outline"],
+[name="chevron-up-outline"] {
   cursor: pointer;
 }
 
+.title {
+  color: var(--Very-dark-desaturated-blue);
+}

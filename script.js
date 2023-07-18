@@ -1,7 +1,7 @@
 const arrow = document.querySelectorAll('[name="chevron-down-outline"]');
 const card = document.querySelectorAll('.card');
 const title = document.querySelectorAll('.title');
-const names = ['chevron-down-outline', 'chevron-up-outline']
+const names = ['chevron-down-outline', 'chevron-up-outline'];
 
 arrow.forEach((element, index) => {
     element.addEventListener('click', () => {
