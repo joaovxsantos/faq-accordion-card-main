@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container {
+  width: 1000px;
+  max-width: 80vw;
+  height: 600px;
+  max-height: 100vh;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+.container .left-image {
+  width: 50%;
+}
+
+.container .left-image [src="./images/illustration-woman-online-desktop.svg"] {
+  width: 400px;
+  min-width: 300px;
+  max-width: 80%;
+  position: relative;
+  left: -70px;
+}
+/* .container .left-image [src="./images/bg-pattern-desktop.svg"] {
+  width: 90%;
+  height: 120%;
+  position: absolute;
+  left: -200px;
+  /* top: 50px; 
+} */
+
+[src="./images/illustration-box-desktop.svg"] {
+  position: absolute;
+  width: 150px;
+  left: -100px;
+  top: 65%;
+  transform: translateY(-65%);
+}
+
+.container .right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 80%;
+}
+
+.card {
+  border-bottom: 1px solid #cac9c9;
+  width: 80%;
+}
+
+.card .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.card #text.off {
+  display: none;
+}
+
+.card #text.on {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#text.on .title {
+  font-weight: 700;
+}
+
+[src="./images/icon-arrow-down.svg"] {
+  cursor: pointer;
+}
+
