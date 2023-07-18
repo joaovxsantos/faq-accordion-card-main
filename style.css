@@ -76,6 +76,10 @@ body {
   margin: 10px 0 10px 0;
 }
 
+.card ion-icon {
+  color: rgb(255, 115, 0);
+}
+
 .card #text.off {
   display: none;
 }
@@ -86,11 +90,9 @@ body {
   display: block;
 }
 
-#text.on .title {
-  font-weight: 700;
-}
 
-[src="./images/icon-arrow-down.svg"] {
+
+[name="chevron-down-outline"], [name="chevron-up-outline"] {
   cursor: pointer;
 }
 
