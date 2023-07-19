@@ -65,6 +65,10 @@ body {
   width: 150px;
 }
 
+[src="./images/illustration-woman-online-mobile.svg"] {
+  display: none;
+}
+
 .container .right-text {
   display: flex;
   flex-direction: column;
@@ -109,4 +113,100 @@ body {
 
 .title {
   color: var(--Very-dark-desaturated-blue);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card .title {
+    font-size: 15px;
+  }
+  .card #text.on {
+    font-size: 14px;
+  }
+
+  .container {
+    height: 720px;
+    max-height: 90vh;
+  }
+
+  .container .left-image [src="./images/bg-pattern-desktop.svg"] {
+    top: 50px;
+    left: -220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 80vh;
+    gap: 50px;
+  }
+
+  .container .left-image {
+    width: 50%;
+    overflow: visible;
+    width: 100%;
+  }
+
+  .container .left-image [src="./images/illustration-woman-online-desktop.svg"],
+  [src="./images/illustration-box-desktop.svg"] {
+    display: none;
+  }
+
+  [src="./images/illustration-woman-online-mobile.svg"] {
+    display: block;
+    width: 140px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container .left-image [src="./images/bg-pattern-desktop.svg"] {
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+  }
+
+  .container .right-text {
+    /* background: red; */
+    width: 100%;
+    align-items: center;
+  }
+
+  .right-text h1 {
+    font-size: 22px;
+  }
+
+  .card .title {
+    font-size: 12px;
+  }
+  .card #text.on {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    padding: 80px 0;
+  }
+  .container {
+    min-height: 100vh;
+  }
+
+  [src="./images/illustration-woman-online-mobile.svg"] {
+    display: block;
+    width: 140px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card .title {
+    font-size: 10px;
+  }
+  .card #text.on {
+    font-size: 8px;
+  }
 }
